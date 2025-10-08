@@ -1,0 +1,73 @@
+# ========== Visual Studio ==========
+
+# User-specific files
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Build results
+[Bb]in/
+[Oo]bj/
+[Ll]og/
+[Tt]emp/
+*.cache
+*.ilk
+*.pdb
+*.obj
+*.exe
+*.dll
+*.appx
+*.manifest
+*.vspscc
+*.vssscc
+
+# VS database files
+*.mdf
+*.ldf
+
+# Visual Studio working folders
+.vs/
+.vscode/
+TestResults/
+.vshistory/
+*.tlog
+
+# NuGet packages
+*.nupkg
+packages/
+!packages/build/
+*.snupkg
+
+# Auto-generated files
+Generated\ Files/
+*.g.i.cs
+*.g.i.vb
+*.Designer.vb
+
+# Publish folders
+publish/
+*.Publish.xml
+
+# Backup & logs
+*.bak
+*.log
+
+# ReSharper / Rider
+_ReSharper*/
+*.DotSettings.user
+
+# Ignore Windows clutter
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Ignore system files
+*.tmp
+*.temp
+
+# Ignore configuration secrets (optional)
+appsettings.Development.json
+appsettings.Local.json
+secrets.json
