@@ -1,15 +1,14 @@
 ﻿Public Class Form1
 
 
-    Private Sub Button1_Operator(sender As Object, e As EventArgs) Handles Button1.Click, Button2.Click, Button3.Click,
-        Button4.Click, Button5.Click, Button6.Click, Button7.Click, Button8.Click, Button9.Click, Button10.Click
+    Private Sub Button1_Operator(sender As Object, e As EventArgs) Handles Button1.Click, Button2.Click, Button3.Click, Button4.Click, Button5.Click, Button6.Click, Button7.Click, Button8.Click, Button9.Click, Button10.Click
 
         Dim Input_num1 As Integer = TextBox1.Text
         Dim Input_num2 As Integer = TextBox2.Text
         Dim Result As Integer
 
 
-        Dim button As Button = CType(sender, Button)
+        Dim button = CType(sender, Button)
         If button Is Button1 Then                      ' Addition
             Result = Input_num1 + Input_num2
             MessageBox.Show("Result: " & Result)
@@ -46,5 +45,27 @@
 
     End Sub
 
+    Private Sub Button11_comparison(sender As Object, e As EventArgs) Handles Button11.Click
+
+        Dim Input_num1 As Integer = TextBox1.Text
+        Dim Input_num2 As Integer = TextBox2.Text
+
+
+        If Input_num1 = Input_num2 Then
+            MessageBox.Show("The two numbers are equal.")
+        ElseIf Input_num1 > Input_num2 Then
+            MessageBox.Show("The first number is greater than the second number.")
+        ElseIf Input_num1 < Input_num2 Then
+            MessageBox.Show("The first number is less than the second number.")
+        ElseIf Input_num1 <> Input_num2 Then
+            MessageBox.Show("The two numbers are not equal.")
+        ElseIf Input_num1 >= Input_num2 Then
+            MessageBox.Show("The first number is greater than or equal to the second number.")
+        ElseIf Input_num1 <= Input_num2 Then
+            MessageBox.Show("The first number is less than or equal to the second number.")
+
+        End If
+
+    End Sub
 
 End Class
